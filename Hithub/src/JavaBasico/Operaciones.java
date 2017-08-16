@@ -94,12 +94,39 @@ for (i=0; i<5; i++) {
         }
         System.out.println(i);
         
-        i=2;
-        while(i<10){
-            System.out.println(i);
-            i+=2;
+        byte cos = 2, cas = 2;
+        while(cos<10){
+            System.out.println("while: " + cos);
+            cos += 2;
         }
+    
+     do{
+         System.out.println("do while: " + cas);
+         cas += 2;
+         while(cas < 10);
         
-        
-    }       
+     
+     if (i <=8 ){
+         System.out.println("Menor igual que 8");
+         else if (i>10){
+                 System.out.println("Mayor a 10");
+                 }
+         
+         switch (i){
+             case 8: 
+                 System.out.println("igual que 8");
+                 break;
+            
+             case 10: 
+                 System.out.println("igual que 10");
+                 break;  
+             default:
+                 System.out.println("Diferente");
+         }
+     }
+     
+   }
 }
+             
+         
+
